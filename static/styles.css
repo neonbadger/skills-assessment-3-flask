@@ -1,0 +1,20 @@
+form input{
+    background-color: yellow;
+}
+
+#lastname{
+    font-weight: bold;
+}
+
+.instruction-box{
+    width: 25%;
+    border-style: ridge;
+}
+
+.instruction-body{
+    margin: 1em;
+}
+
+body{
+    margin: 2em;
+}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Application Form{% endblock %}
+
+{% block content %}
+    <h1>Application Form</h1>
+
+    <div class="instruction-box">
+        <p class="instruction-body">Please fill out the form below to apply for your dream job.</p>
+    </div><br>
+
+    <form action = "/application-response" method="POST">
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" id="firstname" placeholder="First Name"><br>
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Last Name"><br>
+
+        <label for="salary">Salary Requirement:</label>
+        <input type="text" name="salary" id="salary" placeholder="Salary Requirement"><br>
+
+        <label for="position">Job Title You Are Applying For:</label>
+        <select name="position" id="position">
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="QA Engineer">QA Engineer</option>
+            <option value="Product Manager">Product Manager</option>
+        </select><br><br>
+
+        <input type="submit" name="submit" value="Submit Application">
+    </form>
+{% endblock %}
